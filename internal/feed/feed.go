@@ -18,7 +18,7 @@ type RawListing struct {
 }
 
 var (
-	useChatly  = false         // Set to true if you want to use Chatly for parsing
+	useChatly  = true          // Set to true if you want to use Chatly for parsing
 	outputFile = "output.json" // File to write the output, if needed
 )
 
@@ -68,8 +68,9 @@ func ParseFeed(feedURL string) error {
 // and writes the resulting jobs as a JSON array to the provided writer.
 //
 // Parameters:
-//   reader io.Reader - The XML input source.
-//   writer io.Writer - The output destination for the JSON array.
+//
+//	reader io.Reader - The XML input source.
+//	writer io.Writer - The output destination for the JSON array.
 //
 // Behavior:
 //   - Iterates through the XML tokens, looking for <job> elements.
@@ -79,7 +80,8 @@ func ParseFeed(feedURL string) error {
 //   - The output is a valid JSON array.
 //
 // Returns:
-//   error - If any error occurs during XML parsing, job conversion, or writing output.
+//
+//	error - If any error occurs during XML parsing, job conversion, or writing output.
 //
 // Notes:
 //   - If writer is nil, returns an error.

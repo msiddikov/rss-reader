@@ -19,6 +19,8 @@ profile.cov
 output.json
 config.json
 
+*_debug_*
+
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
