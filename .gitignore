@@ -16,6 +16,9 @@
 coverage.*
 *.coverprofile
 profile.cov
+output.json
+config.json
+
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
